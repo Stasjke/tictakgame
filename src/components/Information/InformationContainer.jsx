@@ -1,5 +1,5 @@
 import InformationLayout from './InformationLayout';
-
+import PropTypes from 'prop-types';
 // const InformationContainer = ({ currentPlayer, isGameEnded, isDraw }) => {
 // 	let status;
 
@@ -22,5 +22,11 @@ const InformationContainer = ({ currentPlayer, isGameEnded, isDraw }) => {
 		: `Ходит: ${currentPlayer}`;
 
 	return <InformationLayout status={status} />;
+};
+
+InformationContainer.propTypes = {
+	currentPlayer: PropTypes.oneOf(['X', '0']).isRequired,
+	isGameEnded: PropTypes.bool.isRequired,
+	isDraw: PropTypes.bool.isRequired,
 };
 export default InformationContainer;

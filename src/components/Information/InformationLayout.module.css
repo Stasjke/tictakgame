@@ -1,5 +1,21 @@
 .information {
 	font-size: 3em;
-	margin-bottom: 20px;
+	margin-bottom: 5%;
 	color: black;
-}
+	text-align: center;
+	word-wrap: break-word;
+	max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+	.information {
+	  font-size: 1.5em;
+	}
+  }
+
+  @media (max-width: 480px) {
+	.information {
+	  font-size: 1.2em;
+	  margin-bottom: 3%;
+	}
+  }
